@@ -1,0 +1,45 @@
+#nav-border{
+    font-size: larger;
+    color: greenyellow;
+   
+    
+}
+
+#bar{
+
+    background-color: black;
+    height: 250px;
+    margin: 0;
+
+
+
+    
+ 
+}
+
+
+#background{
+ 
+        height: 500px;
+        background-image: url('crypto.jpg');
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    margin: 0;
+    
+   
+}
+
+
+
+#nav-bar{
+    color: bisque;
+    font-size: larger;
+    
+    
+}
+
+a{
+    color: wheat;
+}
