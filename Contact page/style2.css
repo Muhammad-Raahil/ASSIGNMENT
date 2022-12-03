@@ -1,10 +1,88 @@
 
 
+*{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+
+}
+
+.main{
+    height: 300px;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('Bizmain.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+nav{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-top: 40px;
+    padding-right: 10%;
+}
+
+.logo{
+    color: wheat;
+    font-size: 28px;
+
+}
+
+span{
+    color: red;
+}
+
+nav ul li{
+    list-style-type: none ;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: dotted;
+    font-weight: 600;
+
+}
+
+nav ul li a:hover{
+    color: red;
+    transition: .3s;
+}
+
+button{
+    border: none;
+    background: red;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: azure;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.5s;
+
+
+}
+button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+
+
+/* page 2 css*/
+
 #backg{
 
-    background-color: steelblue;
-    height: 250px;
-    margin: 0;
+    background-color: black;
+    height: 200px;
+    
 
 
 
@@ -15,11 +93,14 @@
 
 #contact-us {
 
-
+    background-color: black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:lightskyblue;
+    color:yellow;
     font-size: 50px;
-    background-color: steelblue ;
+    padding-top: 45px;
+    -webkit-text-stroke: 3px black;
+    
+
     
 
 }
@@ -28,3 +109,226 @@
 
     text-align: center;
 }
+
+
+
+body{
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.contact-box{
+    margin-top: 230px;
+    width: 500px;
+    background-color: grey;
+    box-shadow: 0 0 35px 0 grey;
+    left: 35.5%; /* i used left and top to move the bxo perfectly so it aligns */
+    top: 32%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+form {
+    margin: 35px ;
+
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px ;
+    padding-right: 10px;
+    border: 2px solid steelblue;
+    border-radius: 15px;
+}
+
+.textarea-lenght{
+    height: 120px;
+    padding-top: 10px;
+}
+
+.button-modify{
+
+    border-radius: 8px;
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border:  3px solid  steelblue;
+
+}
+
+#spacing-text
+{
+    color: black;
+    padding-top: 400px;
+    padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slideshow-container {
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+
+
+
+    color: #f2f2f2;
+    font-size: 20px ;
+    padding: 8px 12px;
+    position: absolute;
+    text-align: center;
+
+
+
+
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 100%;
+    display: inline-block;
+    transition: background-color 3.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+
+
+  h3{
+    font-size: 40px;
+    color: wheat;
+    padding-bottom: 20px;
+  }
