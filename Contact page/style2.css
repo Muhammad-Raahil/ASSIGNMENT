@@ -1,9 +1,26 @@
+
+
+#backg{
+
+    background-color: steelblue;
+    height: 250px;
+    margin: 0;
+
+
+
+    
+ 
+}
+
+
 #contact-us {
 
 
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color:lightskyblue;
     font-size: 50px;
+    background-color: steelblue ;
+    
 
 }
 
